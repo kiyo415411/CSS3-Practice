@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+@font-face {
+    font-family: Microsoft JhengHei;
+    src: local(Microsoft JhengHei) url(../font/Microsoft-JhengHei.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Microsoft JhengHei', 'Noto Sans TC', sans-serif;
+    background: url(../images/bg.jpg);
+}
+
+header {
+    height: 225px;
+    background: url(../images/header_l.jpg) left bottom repeat-x #18b8c7;
+    max-width: 100%;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.logo-top {
+    padding: 10px;
+}
+
+.logo-top img {
+    height: 40px;
+}
+
+.title {
+    max-width: 100%;
+    width: 500px;
+    display: block;
+    margin: 0 auto 0;
+    text-align: center;
+}
+
+.title img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .title img {
+        padding-top: 20px;
+        max-width: 100%;
+    }
+
+    .wrapper {
+        width: 96%;
+    }
+}
+
+.main-menu {
+    margin: 15px auto 0;
+    width: 640px;
+    max-width: 100%;
+}
+
+.main-menu ul {
+    display: flex;
+}
+
+.main-menu ul li {
+    width: 25%;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+
+.main-menu ul li a {
+    padding: 6px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.main-menu ul li a:hover,
+.main-menu ul li a.active {
+    background: yellow;
+    border-radius: 20px;
+    color: #333;
+}
+
+.header-btn {
+    position: absolute;
+    right: 20px;
+    top: 60px;
+}
+
+.header-btn a,
+.header-btn a:link {
+    width: 34px;
+    height: 34px;
+    display: block;
+    border-radius: 50%;
+    margin-bottom: 6px;
+}
+
+.header-btn a.fb-btn {
+    background: url(../images/m_menu.png) left -252px no-repeat #055260;
+}
+
+.header-btn a.fb-btn:hover {
+    background: url(../images/m_menu.png) left -288px no-repeat #055260;
+}
+
+.header-btn a.home-btn {
+    background: url(../images/m_menu.png) left -324px no-repeat #055260;
+}
+
+.header-btn a.home-btn:hover {
+    background: url(../images/m_menu.png) left -360px no-repeat #055260;
+}
+
+@media screen and (max-width: 768px) {
+    .title-desk,
+    .girl,
+    .header-btn,
+    .main-menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .title-mobile {
+        display: none;
+    }
+}
+
+a.mobile-btn {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    color: #fff;
+    background: url(../images/m_menu.png) left top no-repeat #055260;
+    border-radius: 50%;
+    padding-left: 10px;
+}
+
+a.mobile-btn.active {
+    background: url(../images/m_menu.png) left -36px no-repeat #055260;
+}
+
+@media screen and (min-width: 768px) {
+    a.mobile-btn {
+        display: none;
+    }
+}
+
+.content {
+    margin: 50px 0;
+}
+
+.content h1 {
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+    color: #666;
+    font-size: 17px;
+    line-height: 1.7;
+    background: url(images/hat.png) 100px 100px no-repeat;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 768px) {
+    .intro {
+        background: none;
+        letter-spacing: -2px;
+    }
+}
+
+.con-box {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.girl {
+    position: absolute;
+    z-index: 4;
+}
+
+.girl.girl1 {
+    right: 40px;
+    bottom: 20px;
+}
+
+.girl.girl2 {
+    left: 0;
+    bottom: 40px;
+}
+
+.content h2 {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    margin: 0 0 0 -45px;
+    background: #1f8597;
+    color: #fff;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    font-size: 22px;
+    padding: 18px 0 0 0px;
+    text-align: center;
+    font-weight: 900;
+}
+
+@media screen and (min-width: 768px) {
+    .content h2 {
+        left: auto;
+        margin: 0;
+        padding: 18px 0 0 0px;
+    }
+}
+
+.intro-box {
+    border: 1px solid #1f8597;
+    border-radius: 20px;
+    padding: 35px 35px 20px 45px;
+    box-shadow: 0 0 3px #ccc;
+    background: #fff;
+    margin: 60px 25px 20px;
+}
+
+.color-green {
+    color: #1f8597;
+    font-weight: 900;
+}
+
+.intro-ul li {
+    padding: 4px 0;
+    font-size: 16px;
+    font-weight: 900;
+    color: #666;
+}
+
+.intro-ul li a:hover {
+    color: #055260;
+    text-decoration: underline;
+}
+
+.content img {
+    max-width: 100%;
+}
+
+.intro-img-r {
+    text-align: right;
+}
+
+.intro-img-c {
+    text-align: center;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+}
+
+.f-company {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.f-company-title {
+    width: 100%;
+    text-align: center;
+    background: #cccccc77;
+    line-height: 1.2rem;
+    padding: 5px 0;
+    font-weight: 900;
+}
+
+.f-logo {
+    width: 50%;
+    text-align: center;
+    border: 1px solid #ffffff2a;
+}
+
+.f-logo img {
+    height: 50px;
+    object-fit: contain;
+    margin-top: 5px;
+}
+
+.f-copy {
+    text-align: center;
+    padding: 5px 0;
+    font-size: 10px;
+    color: #cccccc;
+}
+
+@media screen and (min-width: 768px) {
+    .f-company {
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #a5a5a55d;
+        padding: 0.625rem 0;
+    }
+
+    .f-company-title {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        padding: 0.7rem 0.625rem;
+        margin-left: 1.5rem;
+    }
+
+    .f-logo {
+        width: unset;
+        text-align: center;
+        border: unset;
+        margin-left: 0.75rem;
+    }
+}
